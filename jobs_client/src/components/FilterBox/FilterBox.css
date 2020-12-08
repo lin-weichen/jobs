@@ -1,0 +1,57 @@
+.job-search-container {
+  margin: 20px;
+}
+
+.job-title-input-box {
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.filter-box-container {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  align-items: center;
+  background-color: rgba(236, 236, 236, 0.5);
+  width: 100vh;
+}
+
+.location-input {
+  margin: 10px;
+}
+
+.job-input {
+  padding: 10px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+.job-type-input {
+  display: flex;
+}
+
+.salary-input {
+  padding: 10px;
+}
+
+.salary-min-input {
+  margin: 10px;
+
+  display: flex;
+}
+
+.salary-max-input {
+  margin: 10px;
+
+  display: flex;
+}
+
+.salary-min-max-input {
+  display: flex;
+}
+
+.submit-button {
+  border: 1px solid black;
+  height: 100%;
+}

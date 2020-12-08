@@ -1,0 +1,7 @@
+* {
+  font-family: Arial;
+}
+
+.job-container {
+  display: flex;
+}
