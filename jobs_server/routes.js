@@ -11,11 +11,11 @@ function getJobs(req, res) {
     FROM DICE d 
     WHERE JOB_TITLE = '${jobTitle}';
   ';
-  connection.query(query, function(err, rows, fields){
+  connection.query(query, function(err, jobTitle, fields){
     if (err) console.log(err);
     else{
-      console.log(rows);
-      res.json(rows);
+      console.log(jobTitle);
+      res.json(jobTitle);
     }
   });
 };
@@ -24,7 +24,7 @@ function getJobs(req, res) {
   var jobType = req.query.jobType;
   var salaryMin = req.query.salaryMin;
   var salaryMax = req.query.salaryMax;
-  console.log(jobTitle);
+  //console.log(jobTitle);
   console.log(location);
   console.log(jobType);
   console.log(salaryMin);
