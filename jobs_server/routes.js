@@ -6,11 +6,11 @@ var connection = mysql.createPool(config);
 
 function getJobs(req, res) {
   var jobTitle = req.query.jobTitle;
-  var query = '
+  var query = `
     SELECT *
     FROM DICE d 
     WHERE JOB_TITLE = '${jobTitle}';
-  ';
+  `;
   connection.query(query, function(err, jobTitle, fields){
     if (err) console.log(err);
     else{
