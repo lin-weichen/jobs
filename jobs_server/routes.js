@@ -30,7 +30,7 @@ function getJobs(req, res) {
   console.log(salaryMin);
   console.log(salaryMax);
   res.send("get");
-}
+
 // The exported functions, which can be accessed in index.js.
 module.exports = {
   getJobs: getJobs,
